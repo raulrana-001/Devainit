@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+header{
+    background-color: #090B0E;
+    
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 5%;
+    height: auto;
+    position: relative;
+}
+
+.logo{
+    height: 50px;
+    width: 200px;
+    object-fit: cover;
+    /*border-radius: 50%;*/
+    
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover{
+    color:blueviolet;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Ecrãs pequenos: telemóveis */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        background-color: blueviolet;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+}
+
+main{
+    /*height: 80vh;*/
+}
+
+.HOME {
+    background-image: url(../IMG/Background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+    padding-top:10px;
+}
+
+.slogam{
+    color: #fff;
+    width: fit-content;
+    margin: 0 auto;
+    border: 1px solid blue;
+    border-radius: 40px;
+    padding: 10px;  
+    
+}
+
+.boas-vindas{
+
+}
+
+.boas-vindas h1{
+    color: #fff;
+    font-size: 2.5em;
+    padding-top:40px;
+    text-align: center;
+}
+
+.que_criamos{
+    color: #fff;
+    padding-top:36px;
+    padding-inline: 40px;
+}
+
+.CONTACTOS{
+    background-color: #090B0E;
+    width: 100%;
+    height: 300px;
+    padding-top:10px;
+}
+
+.botões{
+    padding-top:40px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.btn1{
+    background-color: blue;
+    color:#000;
+    
+    padding: 12px 15px;
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.btn1:hover{
+    background-color:#000;
+    color:blue ;
+    border: 1px solid blue;
+    border-radius: 10%;
+    transform: scale(1.05);
+}
+
+.btn2{
+    background-color: blueviolet;
+    color:#000;
+    
+    padding: 12px 15px;
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn2:hover{
+    background-color:#000;
+    color:blueviolet ;
+    border: 1px solid blueviolet;
+    border-radius: 10%;
+    transform: scale(1.05);
+}
+
+.quem_somos{
+    color: #fff;
+    padding-top:20px;
+    text-align: center;
+}
+
+.quem_somos p{
+    color: #fff;
+    padding-top: 10px;
+}
+
+.SERVIÇOS{
+    
+}
+
+.imagem_dos_serviços{  
+    background-image: url(../IMG/Logótipo\ Devainit.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    padding-top:10px;
+}
+
+
+footer{
+    background-color: #090B0E;
+    text-align: center;
+    height: 20vh;
+}
